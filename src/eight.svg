@@ -2,7 +2,5 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 260" >
-
-    <ellipse id="8va" class="key" cx="4.5" cy="244.984" rx="4.5" ry="13.5" transform="translate(20.25,-195.475)"/>
-
+   <path id="8va" class="key" d="m 18.35034,64.557824 c 0.343,0.562479 3.404762,-4.068028 6.853742,-4.59864 3.408873,-0.524442 6.267857,2.343537 7.693877,3.272109 1.527789,0.99484 1.540461,-11.138949 -3.006803,-10.877551 -4.547264,0.261398 -12.291822,10.97252 -11.540816,12.204082 z" />
 </svg>
