@@ -1,10 +1,6 @@
-## UnaCorda
-
-[UnaCorda](../README.md) > Changelog
-
-#### Changelog
+# Changelog
 
 - Latest (0.0.1)
-    - Initial release.
+  - Initial release.
 
-[Back to the top](changelog.md#UnaCorda)
+[Back to the top](changelog.md#Saxy)

@@ -1,6 +1,6 @@
 # Saxy
 
-![Preview of Saxy](Saxy.png?raw=true)
+![Preview of Saxy](demo_Saxy.png?raw=true)
 
 Saxy is a font for music notation of Saxophone fingerings (tablatures).
 
@@ -19,8 +19,12 @@ Some programs - like Microsoft Word - may require you to explicitly enable OpenT
 
 [Changelog](docs/changelog.md)
 
+## Things and Thongs using this font
+
+The Musescore Plugin [saxophone-fingerings](https://github.com/Marr11317/saxophone-fingerings) uses this font.
+
 ## Contributing
 
 Contributions are welcome. See [docs/contributing.md](docs/contributing.md) to get started.
 
-*UnaCorda is licensed under the SIL Open Font License. That means that it is free to use. However, developing fonts takes considerable time and effort, so if you regularly earn money with this font (by using it for commercial work or by selling a derivative of it on its own or as part of a larger work or collection), please consider supporting me with a donation [via paypal.](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S2ZCFC2QSQVQ4&source=url)*
+*Saxy is licensed under the SIL Open Font License. That means that it is free to use. However, developing fonts takes considerable time and effort, so if you regularly earn money with this font (by using it for commercial work or by selling a derivative of it on its own or as part of a larger work or collection), please consider supporting me with a donation [via paypal.](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S2ZCFC2QSQVQ4&source=url)*

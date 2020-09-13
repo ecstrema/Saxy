@@ -3,20 +3,6 @@ import fontforge
 import math as math
 
 # list of characters to use
-# svg_map = [
-#     "space", "exclam", "numbersign", "dollar", "percent",
-#     "ampersand", "parenleft", "asterisk", "plus", "hyphen",
-#     "period", "slash", "one", "two", "three",
-#     "four", "five", "six", "eight", "at",
-#     "A", "B", "C", "D", "E",
-#     "G", "P", "T", "X", "asciicircum",
-#     "grave", "b", "c", "e", "f",
-#     "g", "j", "k", "l", "p",
-#     "q", "r", "t", "v", "w",
-#     "x", "nonbreakingspace", "exclamdown", "cent", "sterling",
-#     "section", "ordmasculine", "atilde", "aring", "ccedilla",
-#     "quotesinglbase", "trademark", "infinity",
-# ]
 svg_map = [
     "s",  # the full empty graph
     "one", "two", "three", "four", "five", "six", "seven",
