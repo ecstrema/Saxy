@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 160 260">
+
+    <g id="All">
+        <ellipse id="8va" class="key" fill="none" stroke="black" cx="4.5" cy="244.984" rx="4.5" ry="13.5" transform="translate(20.25,-195.475)"/>
+        <path    id="X"   class="key" fill="none" stroke="black" d="M6.94 37.5 A14.9791 3.49578 103.71 0 1 -0 50.69 A6.9375 4.39604 -180 0 0 6.94 55.08 A6.9375 4.39604 -180 0 0 13.88 50.69 A14.9791 3.49578 76.29 0 1 6.94 37.5 Z" transform="translate(45, -20)"/>
+
+        <ellipse id="1" class="key" fill="none" stroke="black" cx="10.1539" cy="248.33" rx="10.1539" ry="10.1539" transform="translate(42.0498,-200.036)"/>
+        <ellipse id="P" class="key" fill="none" stroke="black" cx="4.48464" cy="253.999" rx="4.48464" ry="4.48464" transform="translate(56.0961,-190.426)"/>
+        <ellipse id="2" class="key" fill="none" stroke="black" cx="10.1539" cy="248.33" rx="10.1539" ry="10.1539" transform="translate(42.0498,-168.511)"/>
+        <ellipse id="3" class="key" fill="none" stroke="black" cx="10.1539" cy="248.33" rx="10.1539" ry="10.1539" transform="translate(42.0498,-141.143)"/>
+
+        <path    id="Middle line" fill="none" stroke="black" d="M0 258.48 L18.95 258.48" class="normal" transform="translate(43.4037,-129.635)"/>
+
+        <ellipse id="4"  class="key" fill="none" stroke="black" cx="10.1539" cy="248.33" rx="10.1539" ry="10.1539" transform="translate(42.0498,-97.8196)"/>
+        <ellipse id="5"  class="key" fill="none" stroke="black" cx="10.1539" cy="248.33" rx="10.1539" ry="10.1539" transform="translate(42.0498,-68.0348)"/>
+        <ellipse id="6"  class="key" fill="none" stroke="black" cx="10.1539" cy="248.33" rx="10.1539" ry="10.1539" transform="translate(42.0498,-38.25)"/>
+        <path    id="Eb" class="key" fill="none" stroke="black" d="M19.12 251.73 L0 251.73 A10.125 6.75 -180 0 0 10.12 258.48 A9 6.75 -180 0 0 19.12 251.73 Z" transform="translate(46.125,482.093) rotate(180)"/>
+        <path    id="7"  class="key" fill="none" stroke="black" d="M19.12 251.73 L0 251.73 A10.125 6.75 -180 0 0 10.12 258.48 A9 6.75 -180 0 0 19.12 251.73 Z" transform="translate(27,-18)"/>
+
+        <ellipse id="C1" class="key" fill="none" stroke="black" cx="5.41542" cy="244.946" rx="5.41542" ry="13.5385" transform="translate(15.4609,-201.795) rotate(-15)"/>
+        <ellipse id="C2" class="key" fill="none" stroke="black" cx="5.41542" cy="244.946" rx="5.41542" ry="13.5385" transform="translate(30.8265,-182.842) rotate(-15)"/>
+        <path    id="C3" class="key" fill="none" stroke="black" d="M0.39 243.32 L1.85 242.11 a0.9 0.9 0 0 1 0.576166 -0.208601 L6.46 241.9 a0.9 0.9 0 0 1 0.636396 0.263604 L9.18 244.24 a0.9 0.9 0 0 1 0.263604 0.636396 L9.44 254.73 a0.9 0.9 0 0 1 -0.253987 0.626632 L6.43 258.21 a0.9 0.9 0 0 1 -0.646013 0.273368 L2.47 258.48 a0.9 0.9 0 0 1 -0.636396 -0.263604 L0.27 256.65 a0.9 0.9 0 0 1 -0.263591 -0.641158 L0.07 244.01 a0.9 0.9 0 0 1 0.323821 -0.686637 Z" transform="translate(31.1682,356.919) rotate(180)"/>
+        <ellipse id="C4" class="key" fill="none" stroke="black" cx="5.41542" cy="244.946" rx="5.41542" ry="13.5385" transform="translate(9.16478,-177.426) rotate(-15)"/>
+        <path    id="C5" class="key" fill="none" stroke="black" d="M4.12 236.69 L9.77 235.66 a0.9 0.9 0 0 1 1.061 0.885483 L10.83 251.5 a0.9 0.9 0 0 1 -0.0950155 0.402492 L7.8 257.77 a0.9 0.9 0 0 1 -1.11255 0.443322 L0.86 256.09 a0.9 0.9 0 0 1 -0.532442 -1.1689 L3.32 247.13 a0.9 0.9 -180 0 0 0.059989 -0.323081 L3.38 237.57 a0.9 0.9 0 0 1 0.739003 -0.885483 Z" transform="translate(27.8344,-76.4484)"/>
+
+        <path    id="tA" class="key" fill="none" stroke="black" d="M0.39 243.32 L1.85 242.11 a0.9 0.9 0 0 1 0.576166 -0.208601 L6.46 241.9 a0.9 0.9 0 0 1 0.636396 0.263604 L9.18 244.24 a0.9 0.9 0 0 1 0.263604 0.636396 L9.44 254.73 a0.9 0.9 0 0 1 -0.253987 0.626632 L6.43 258.21 a0.9 0.9 0 0 1 -0.646013 0.273368 L2.47 258.48 a0.9 0.9 0 0 1 -0.636396 -0.263604 L0.27 256.65 a0.9 0.9 0 0 1 -0.263591 -0.641158 L0.07 244.01 a0.9 0.9 0 0 1 0.323821 -0.686637 Z" transform="translate(21.7251,-102.849)"/>
+        <path    id="tC" class="key" fill="none" stroke="black" d="M0.39 243.32 L1.85 242.11 a0.9 0.9 0 0 1 0.576166 -0.208601 L6.46 241.9 a0.9 0.9 0 0 1 0.636396 0.263604 L9.18 244.24 a0.9 0.9 0 0 1 0.263604 0.636396 L9.44 254.73 a0.9 0.9 0 0 1 -0.253987 0.626632 L6.43 258.21 a0.9 0.9 0 0 1 -0.646013 0.273368 L2.47 258.48 a0.9 0.9 0 0 1 -0.636396 -0.263604 L0.27 256.65 a0.9 0.9 0 0 1 -0.263591 -0.641158 L0.07 244.01 a0.9 0.9 0 0 1 0.323821 -0.686637 Z" transform="translate(21.7251,-123.156)"/>
+        <path    id="tF" class="key" fill="none" stroke="black" d="M2.36 236.32 L0.34 237.91 a0.9 0.9 -180 0 0 -0.343239 0.707119 L0 256.45 A3.88054 2.03078 -180 0 0 3.88 258.48 A5.11025 3.1939 -180 0 0 8.99 255.29 L8.99 252.22 a0.9 0.9 0 0 1 0.625899 -0.857245 A3.1939 5.11025 -180 0 0 12.18 246.35 A3.1939 5.11025 -180 0 0 9.59 241.33 a0.9 0.9 0 0 1 -0.632207 -0.783667 A3.1939 5.11025 -180 0 0 5.8 236.13 L2.91 236.13 a0.9 0.9 -180 0 0 -0.556761 0.192881 Z" transform="translate(27.8344,-50.3774)"/>
+
+        <path    id="G#" class="key" fill="none" stroke="black" d="M0.05 251.71 A2.28715 2.03302 0 0 1 2.41 249.67 L22.98 249.67 L23.06 249.67 A10.6929 5.64349 0 0 1 13.58 258.47 A13.1319 6.2533 0 0 1 0.05 251.71 Z" transform="translate(72.7245,-136.695)"/>
+        <path    id="B"  class="key" fill="none" stroke="black" d="M0.34 245.28 A14.2155 9.13852 0 0 1 14.55 254.42 A4.06156 3.38464 90 0 1 11.17 258.48 L3.05 258.48 A3.04617 2.70771 0 0 1 0 255.78 L0.34 245.28 Z" transform="translate(68.8575,-123.156)"/>
+        <path    id="C#" class="key" fill="none" stroke="black" d="M14.89 255.78 A3.38464 2.70771 0 0 1 11.51 258.48 L3.38 258.48 A3.38464 5.41542 0 0 1 0 253.07 A14.0471 8.93909 5.91 0 1 14.89 245.62 L14.89 255.78 Z" transform="translate(86.796,-122.48)"/>
+        <path    id="Bb" class="key" fill="none" stroke="black" d="M4.06 248.33 L23.69 248.33 A4.73849 4.06156 0 0 1 28.43 252.39 A14.8924 6.09235 0 0 1 13.54 258.48 A13.5385 6.76927 0 0 1 0 251.71 A4.06156 3.38464 0 0 1 4.06 248.33 Z" transform="translate(70.5498,-109.618)"/>
+    </g>
+
+</svg>
