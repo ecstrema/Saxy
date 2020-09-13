@@ -46,8 +46,8 @@ def add_kerning(font):
     for index in range(len(svg_map)):
         offsets[index + len(svg_map) * index] = 400
 
-    # for index in range(len(svg_map)):
-    #     offsets[s_index * len(svg_map) + index] = 400
+    for index in range(len(svg_map)):
+        offsets[index * len(svg_map) + s_index] = 400
 
     # for i in range(len(svg_map_without_space)):
     #     print(offsets[len(svg_map_without_space) * i: len(svg_map_without_space) * (i + 1)])
@@ -69,13 +69,12 @@ if __name__ == "__main__":
     glyph = font.createMappedChar("space")
     glyph.width = 400
 
+    # font['.notdef'].width = 400
+
     set_font_attributes(font)
     add_kerning(font)
 
-    font.generate('../redist/' + font_name.lower() + '.ttf', flags=('round', 'opentype'))
-    font.generate('../redist/' + font_name.lower() + '.otf', flags=('round', 'opentype'))
-    font.generate('../redist/' + font_name.lower() + '.ufo', flags=('round', 'opentype'))
-    font.generate('../redist/' + font_name.lower() + '.woff2', flags=('round', 'opentype'))
-    font.generate('../redist/' + font_name.lower() + '.woff', flags=('round', 'opentype'))
+    for ext in ['.ttf', '.otf', '.woff2']:
+        font.generate('../redist/' + font_name.lower() + ext, flags=('round', 'opentype'))
 
     font.close()
