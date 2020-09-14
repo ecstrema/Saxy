@@ -1,20 +1,21 @@
 import fontforge
 
-import math as math
+import os
+
+import generate_svgs
+
+master_svg = "MASTER.svg"
+output_dir = "generated"
+template_svg = "template.svg"
+master_char = "s"
+
+extensions_to_redist = ['.ttf', '.otf', '.woff2']
 
 # list of characters to use
-svg_map = [
-    "s",  # the full empty graph
-    "one", "two", "three", "four", "five", "six", "seven",
-    "eight", "nine", "zero", # 8va, low A, thumb catch
-    "x", "p", "d",  # X, P, Eb/D#
-    "f", "c", "a",  # Tf, Tc, Ta
-    "q", "w", "e", "r", "t",  # C1, C2, C3, C4, C5
-    "g", "b", "v", "h",  # G#, low B, C#, low Bb
-    "hyphen",  # The middle line
-]
+svg_map = []
 font_name = "Saxy"
 font_comments = "This font is useful to generate saxophone fingering diagrams."
+space_size = 450
 
 
 def set_font_attributes(font):
@@ -26,14 +27,14 @@ def set_font_attributes(font):
     font.design_size = 1
 
 def add_kerning(font):
-    s_index = svg_map.index("s")
+    s_index = svg_map.index(master_char)
 
     offsets = [0] * len(svg_map) ** 2
     for index in range(len(svg_map)):
-        offsets[index + len(svg_map) * index] = 400
+        offsets[index + len(svg_map) * index] = space_size
 
     for index in range(len(svg_map)):
-        offsets[index * len(svg_map) + s_index] = 400
+        offsets[index * len(svg_map) + s_index] = space_size
 
     # for i in range(len(svg_map_without_space)):
     #     print(offsets[len(svg_map_without_space) * i: len(svg_map_without_space) * (i + 1)])
@@ -45,22 +46,24 @@ def add_kerning(font):
     font.addKerningClass("kern", "kern-1", tuple(svg_map), tuple(svg_map), tuple(offsets_tuple))
 
 if __name__ == "__main__":
+    svg_map = generate_svgs.generate(master_svg, output_dir, template_svg, master_char)
+
     font = fontforge.font()  # new font
     for char in svg_map:
         glyph = font.createMappedChar(char)
-        glyph.importOutlines('../src/' + char + '.svg')
+        glyph.importOutlines(os.path.join(output_dir, char + '.svg'))
         glyph.width = 0
 
     # Normal space char is to large
     glyph = font.createMappedChar("space")
-    glyph.width = 400
+    glyph.width = space_size
 
     # font['.notdef'].width = 400
 
     set_font_attributes(font)
     add_kerning(font)
 
-    for ext in ['.ttf', '.otf', '.woff2']:
+    for ext in extensions_to_redist:
         font.generate('../redist/' + font_name.lower() + ext, flags=('round', 'opentype'))
 
     font.close()
