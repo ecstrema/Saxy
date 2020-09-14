@@ -46,7 +46,7 @@ def add_kerning(font):
     font.addKerningClass("kern", "kern-1", tuple(svg_map), tuple(svg_map), tuple(offsets_tuple))
 
 if __name__ == "__main__":
-    svg_map = generate_svgs.generate(master_svg, output_dir, template_svg, master_char)
+    svg_map = generate_svgs.generate(master_svg, output_dir, template_svg, master_char, ["nine"])
 
     font = fontforge.font()  # new font
     for char in svg_map:

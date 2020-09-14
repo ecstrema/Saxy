@@ -48,14 +48,14 @@ def check_output_dir(output_dir):
 
 def generate_merge(merge_char, names, values, template: str, output_dir, exclude_from_master_char):
     inside_str = ""
-    for svg in values:
-        if not svg in exclude_from_master_char:
-            inside_str += '\n    ' + svg
+    for index in range(len(names)):
+        if not names[index] in exclude_from_master_char:
+            inside_str += '\n    ' + values[index]
 
     value = template.replace('<!--$Value-->', inside_str)
 
-    value = value.replace('class="key"', 'class="key" fill="none" stroke="black" stroke-width="3px"').replace('class="normal"', 'class="normal" fill="none" stroke="black" stroke-width="3px"')
-
+    value = value.replace('class="key"', 'class="key" fill="none" stroke="black" stroke-width="3px"')
+    value = value.replace('class="normal"', 'class="normal" fill="black" stroke="none" stroke-width="3px"')
     with open(os.path.join(os.path.dirname(current_file_path), output_dir, merge_char + ".svg"), 'w') as file:
         file.write(value)
 
