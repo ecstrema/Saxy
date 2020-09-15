@@ -34,7 +34,8 @@ def generate(filename, output_dir, template_filename, merge_char, exclude_from_m
     generate_svgs(names, values, template, output_dir)
     generate_merge(merge_char, names, values, template,
                    output_dir, exclude_from_master_char)
-    names.append(merge_char)
+    if not merge_char == "":
+        names.append(merge_char)
     return names
 
 
@@ -47,6 +48,8 @@ def check_output_dir(output_dir):
 
 
 def generate_merge(merge_char, names, values, template: str, output_dir, exclude_from_master_char):
+    if merge_char == "":
+        return
     inside_str = ""
     for index in range(len(names)):
         if not names[index] in exclude_from_master_char:

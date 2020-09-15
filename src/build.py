@@ -24,7 +24,8 @@ def set_font_attributes(font):
     font.familyname = font_name
     font.fullname = font_name
     font.comment = font_comments
-    font.design_size = 1
+    font.fontlog = font_comments
+    font.design_size = 3
 
 def add_kerning(font):
     s_index = svg_map.index(master_char)
@@ -46,13 +47,19 @@ def add_kerning(font):
     font.addKerningClass("kern", "kern-1", tuple(svg_map), tuple(svg_map), tuple(offsets_tuple))
 
 if __name__ == "__main__":
-    svg_map = generate_svgs.generate(master_svg, output_dir, template_svg, master_char, ["nine"])
+    svg_map = generate_svgs.generate(master_svg, output_dir, template_svg, "", ["nine"])
 
     font = fontforge.font()  # new font
     for char in svg_map:
         glyph = font.createMappedChar(char)
         glyph.importOutlines(os.path.join(output_dir, char + '.svg'))
         glyph.width = 0
+
+    # import merge char
+    merge_char = font.createMappedChar(master_char)
+    merge_char.importOutlines('merge.svg')
+    merge_char.width = 0
+    svg_map.append(master_char)
 
     # Normal space char is to large
     glyph = font.createMappedChar("space")
