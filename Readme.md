@@ -1,12 +1,12 @@
-# Saxy
+![Preview of Saxy](demo_Saxy.svg?raw=true)
 
-![Preview of Saxy](demo_Saxy.png?raw=true)
+# Saxy
 
 Saxy is a font for music notation of Saxophone fingerings (tablatures).
 
 ## Downloading and installing
 
-You can download Saxy ([TTF](redist/Saxy.ttf?raw=true), [OTF](redist/Saxy.otf?raw=true)) and follow the standard procedures for installing and selecting fonts on your system.
+You can download Saxy with these links ([TTF](redist/Saxy.ttf?raw=true), [OTF](redist/Saxy.otf?raw=true)) and follow the standard procedures for installing and selecting fonts on your system.
 
 ## Usage
 
