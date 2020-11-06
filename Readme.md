@@ -12,6 +12,10 @@ You can download Saxy with these links ([TTF](redist/Saxy.ttf?raw=true), [OTF](r
 
 Basic usage is described in the [Manual](docs/manual.md).
 
+## Example
+
+[Microsoft Word](https://github.com/Marr11317/Saxy/raw/master/docs/MsWord.docx)
+
 ## Requirements
 
 This font should work in any program that handles fonts reasonably.
