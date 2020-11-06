@@ -34,5 +34,3 @@ The Musescore Plugin [saxophone-fingerings](https://github.com/Marr11317/saxopho
 ## Contributing
 
 Contributions are welcome. See [docs/contributing.md](docs/contributing.md) to get started.
-
-*Saxy is licensed under the SIL Open Font License. That means that it is free to use. However, developing fonts takes considerable time and effort, so if you regularly earn money with this font (by using it for commercial work or by selling a derivative of it on its own or as part of a larger work or collection), please consider supporting me with a donation [via paypal.](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S2ZCFC2QSQVQ4&source=url)*
