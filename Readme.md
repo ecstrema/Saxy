@@ -17,7 +17,11 @@ Basic usage is described in the [Manual](docs/manual.md).
 This font should work in any program that handles fonts reasonably.
 Some programs - like Microsoft Word - may require you to explicitly enable OpenType features.
 
-[Changelog](docs/changelog.md)
+Here's a link on how to do that for Microsoft Word, Photoshop and Illustrator:  https://medialoot.com/blog/how-to-enable-opentype-features-in-word-photoshop-and-illustrator/
+
+## Changelog
+
+See [docs/changelog.md](docs/changelog.md)
 
 ## Things and Thongs using this font
 
