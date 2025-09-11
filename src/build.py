@@ -9,7 +9,7 @@ output_dir = "generated"
 template_svg = "template.svg"
 master_char = "s"
 
-extensions_to_redist = ['.ttf', '.otf', '.woff2']
+extensions_to_redist = [".ttf", ".otf", ".woff2"]
 
 # list of characters to use
 svg_map = []
@@ -19,7 +19,6 @@ space_size = 450
 
 
 def set_font_attributes(font):
-
     font.fontname = font_name
     font.familyname = font_name
     font.fullname = font_name
@@ -27,24 +26,27 @@ def set_font_attributes(font):
     font.fontlog = font_comments
     font.design_size = 3
 
+
 def add_kerning(font):
-    s_index = svg_map.index(master_char)
+    master_index = svg_map.index(master_char)
 
     offsets = [0] * len(svg_map) ** 2
-    for index in range(len(svg_map)):
-        offsets[index + len(svg_map) * index] = space_size
 
-    for index in range(len(svg_map)):
-        offsets[index * len(svg_map) + s_index] = space_size
+    # make all glyphs pair-wise have negative kerning so they overlap
+    for left in range(len(svg_map)):
+        for right in range(len(svg_map)):
+            offsets[len(svg_map) * left + right] = -space_size
 
-    # for i in range(len(svg_map_without_space)):
-    #     print(offsets[len(svg_map_without_space) * i: len(svg_map_without_space) * (i + 1)])
+    # except when you start creating a new glyph
+    for right in range(len(svg_map)):
+        offsets[len(svg_map) * right + master_index] = 0
 
     offsets_tuple = tuple(offsets)
 
     font.addLookup("kern", "gpos_pair", None, [["kern", [["latn", ["dflt"]]]]])
-    #font.addLookupSubtable("kern", "kern-1")
+    # font.addLookupSubtable("kern", "kern-1")
     font.addKerningClass("kern", "kern-1", tuple(svg_map), tuple(svg_map), tuple(offsets_tuple))
+
 
 if __name__ == "__main__":
     svg_map = generate_svgs.generate(master_svg, output_dir, template_svg, "", ["nine"])
@@ -52,13 +54,13 @@ if __name__ == "__main__":
     font = fontforge.font()  # new font
     for char in svg_map:
         glyph = font.createMappedChar(char)
-        glyph.importOutlines(os.path.join(output_dir, char + '.svg'))
-        glyph.width = 0
+        glyph.importOutlines(os.path.join(output_dir, char + ".svg"))
+        glyph.width = space_size
 
     # import merge char
     merge_char = font.createMappedChar(master_char)
-    merge_char.importOutlines('merge.svg')
-    merge_char.width = 0
+    merge_char.importOutlines("merge.svg")
+    merge_char.width = space_size
     svg_map.append(master_char)
 
     # Normal space char is to large
@@ -71,6 +73,6 @@ if __name__ == "__main__":
     add_kerning(font)
 
     for ext in extensions_to_redist:
-        font.generate('../redist/' + font_name.lower() + ext, flags=('round', 'opentype'))
+        font.generate("../redist/" + font_name.lower() + ext, flags=("round", "opentype"))
 
     font.close()

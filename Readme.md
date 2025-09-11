@@ -6,26 +6,28 @@ Saxy is a font for music notation of Saxophone fingerings (tablatures).
 
 ## Downloading and installing
 
-You can download Saxy with these links ([TTF](redist/Saxy.ttf?raw=true), [OTF](redist/Saxy.otf?raw=true)) and follow the standard procedures for installing and selecting fonts on your system.
-
-## Usage
-
-Basic usage is described in the [Manual](docs/manual.md).
-
-## Example
-
-[Microsoft Word](https://github.com/Marr11317/Saxy/raw/master/docs/MsWord.docx)
+You can download Saxy from the redist folder and follow the standard procedures for installing and selecting fonts on your system.
 
 ## Requirements
 
-This font should work in any program that handles fonts reasonably.
-Some programs - like Microsoft Word - may require you to explicitly enable OpenType features.
+This font should work in any program that handles fonts reasonably. However, some programs, like Microsoft Word, seem not to like it. It works fine in LibreOffice Writer, on the web, and in MuseScore.
 
-Here's a link on how to do that for Microsoft Word, Photoshop and Illustrator:  https://medialoot.com/blog/how-to-enable-opentype-features-in-word-photoshop-and-illustrator/
+# Usage
 
-## Changelog
+The tablature system used in this font has been based upon that outlined
+by Jean-Marie Londeix in his book, "HELLO!  Mr. SAX".
 
-See [docs/changelog.md](docs/changelog.md)
+Each character maps to a specific key:
+
+ - s (stands for sax)  : The full empty graph
+ - 1, 2, 3, 4, 5, 6, 7 : The center keys, 7 being the low C
+ - 8, 9, 0             : 8va, low A, thumb catch
+ - x, p, d             : X, P, Eb/D#
+ - f, c, a             : Tf, Tc, Ta
+ - q, w, e, r, t       : C1, C2, C3, C4, C5
+ - g, b, v, h          : G#, low B, C#, low Bb
+ - "-" (hyphen)        : The middle line
+
 
 ## Things and Thongs using this font
 
@@ -33,4 +35,11 @@ The Musescore Plugin [saxophone-fingerings](https://github.com/Marr11317/saxopho
 
 ## Contributing
 
-Contributions are welcome. See [docs/contributing.md](docs/contributing.md) to get started.
+Contributions are welcome.
+
+The fonts are built using [FontForge](https://fontforge.org/)'s python scripting interface. To build the font, first install FontForge, then run ffpython located in your FontForge installation directory, and run:
+
+```bash
+cd src
+ffpython build.py
+```
