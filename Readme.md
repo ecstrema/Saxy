@@ -33,7 +33,7 @@ Each character maps to a specific key:
  - "-" (hyphen)        : The middle line
 
 
-## Things and Thongs using this font
+## What's using it?
 
 The Musescore Plugin [saxophone-fingerings](https://github.com/Marr11317/saxophone-fingerings) uses this font.
 
