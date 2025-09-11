@@ -4,6 +4,10 @@
 
 Saxy is a font for music notation of Saxophone fingerings (tablatures).
 
+## Demo
+
+[See it in action here](https://ecstrema.github.io/Saxy/)
+
 ## Downloading and installing
 
 You can download Saxy from the redist folder and follow the standard procedures for installing and selecting fonts on your system.
@@ -43,3 +47,7 @@ The fonts are built using [FontForge](https://fontforge.org/)'s python scripting
 cd src
 ffpython build.py
 ```
+
+## License
+
+This font is licensed under the SIL Open Font License, Version 1.1.

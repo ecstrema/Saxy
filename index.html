@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Saxy Font Test</title>
+    <style>
+      @font-face {
+        font-family: "Saxy";
+        src: url("/redist/Saxy.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      p {
+        margin-block-end: 0;
+        margin-block-start: 0;
+      }
+      .saxy-text {
+        font-family: "Saxy", sans-serif;
+        font-size: 128px;
+      }
+      .show-key {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .keys {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Saxy - Font for saxophone fingering diagrams</h1>
+    <h2>Usage</h2>
+    <p>
+      The tablature system used in this font has been based upon that outlined
+      by Jean-Marie Londeix in his book, "HELLO! Mr. SAX".
+    </p>
+
+    <p>Each character maps to a specific key:</p>
+
+    <ul>
+      <li>s (stands for sax) : The full empty graph</li>
+      <li>1, 2, 3, 4, 5, 6, 7 : The center keys, 7 being the low C</li>
+      <li>8, 9, 0 : 8va, low A, thumb catch</li>
+      <li>x, p, d : X, P, Eb/D#</li>
+      <li>f, c, a : Tf, Tc, Ta</li>
+      <li>q, w, e, r, t : C1, C2, C3, C4, C5</li>
+      <li>g, b, v, h : G#, low B, C#, low Bb</li>
+      <li>"-" (hyphen) : The middle line</li>
+    </ul>
+    <div class="keys">
+      <div class="show-key">
+        <p class="saxy-text">s</p>
+        <p class="show-key-value">s</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">s1</p>
+        <p class="show-key-value">s1</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">s2</p>
+        <p class="show-key-value">s2</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">s3</p>
+        <p class="show-key-value">s3</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">s4</p>
+        <p class="show-key-value">s4</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">s5</p>
+        <p class="show-key-value">s5</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">s6</p>
+        <p class="show-key-value">s6</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">s7</p>
+        <p class="show-key-value">s7</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">s8</p>
+        <p class="show-key-value">s8</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">s9</p>
+        <p class="show-key-value">s9</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">0</p>
+        <p class="show-key-value">0</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sx</p>
+        <p class="show-key-value">sx</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sp</p>
+        <p class="show-key-value">sp</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sd</p>
+        <p class="show-key-value">sd</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sf</p>
+        <p class="show-key-value">sf</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sc</p>
+        <p class="show-key-value">sc</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sa</p>
+        <p class="show-key-value">sa</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sq</p>
+        <p class="show-key-value">sq</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sw</p>
+        <p class="show-key-value">sw</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">se</p>
+        <p class="show-key-value">se</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sr</p>
+        <p class="show-key-value">sr</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">st</p>
+        <p class="show-key-value">st</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sg</p>
+        <p class="show-key-value">sg</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sb</p>
+        <p class="show-key-value">sb</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sv</p>
+        <p class="show-key-value">sv</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">sh</p>
+        <p class="show-key-value">sh</p>
+      </div>
+      <div class="show-key">
+        <p class="saxy-text">-</p>
+        <p class="show-key-value">-</p>
+      </div>
+    </div>
+    <div class="show-key">
+      <p class="saxy-text" id="live-saxy-text">s123</p>
+      <input
+        type="text"
+        id="live-saxy-input"
+        value="s123"
+        maxlength="10"
+        style="font-size: 2rem; text-align: center"
+      />
+    </div>
+    <script>
+      const input = document.getElementById("live-saxy-input");
+      const saxyText = document.getElementById("live-saxy-text");
+      input.addEventListener("input", () => {
+        saxyText.textContent = input.value;
+      });
+    </script>
+  </body>
+</html>
